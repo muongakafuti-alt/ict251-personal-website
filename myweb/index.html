@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muonga Kafuti - Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the World of Web Programming</h1>
+<button type="button" id="themeToggle">
+    Switch to dark mode
+</button>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#plan">Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        <a href="#studyCalculator">Study Hours</a>
+    </nav>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Hello! My name is Muonga Kafuti (Student ID: 202512708). I am currently studying Introduction to Web Technologies. I am passionate about learning how the web works and acquiring practical web development skills to build modern, interactive, and user-friendly websites.</p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Top 3 Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Music</li>
+                <li>Watching movies</li>
+            </ul>
+        </section>
+        <section id="projects">
+
+    <h2>My Projects and Skills</h2>
+
+    <article>
+        <h3>HTML</h3>
+        <p>I have learned how to create webpages using HTML5.</p>
+    </article>
+
+    <article>
+        <h3>CSS</h3>
+        <p>I have learned how to style webpages using CSS.</p>
+    </article>
+
+    <article>
+        <h3>JavaScript</h3>
+        <p>I have started learning how to make webpages interactive.</p>
+    </article>
+
+</section>
+
+        <!-- Learning Plan Section -->
+        <section id="plan" class="content-section">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master HTML5 structure and semantic tags.</li>
+                <li>Learn CSS styling, Flexbox, and responsive layouts.</li>
+                <li>Practice embedding media and building contact forms.</li>
+            </ol>
+
+            <table>
+                <caption>Weekly Web Learning Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Semantics</td>
+                        <td>Structure semantic elements</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Layouts</td>
+                        <td>Style gallery and navigation</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media & Forms</td>
+                        <td>Embed video, audio & form</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="studyCalculator">
+    <h2>My Study Hours Calculator</h2>
+
+    <p>
+        Enter the number of hours you study each day
+        to calculate your weekly total.
+    </p>
+
+    <form id="studyForm">
+        <label for="monday">Monday (hours):</label>
+        <input type="number" id="monday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="tuesday">Tuesday (hours):</label>
+        <input type="number" id="tuesday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="wednesday">Wednesday (hours):</label>
+        <input type="number" id="wednesday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="thursday">Thursday (hours):</label>
+        <input type="number" id="thursday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="friday">Friday (hours):</label>
+        <input type="number" id="friday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="saturday">Saturday (hours):</label>
+        <input type="number" id="saturday"
+               min="0" max="24" step="0.25" required>
+
+        <label for="sunday">Sunday (hours):</label>
+        <input type="number" id="sunday"
+               min="0" max="24" step="0.25" required>
+
+        <button type="submit">Calculate weekly hours</button>
+    </form>
+
+    <p id="studyResult" role="status" aria-live="polite">
+        Your weekly total will appear here.
+    </p>
+</section>
+        <!-- Photo Gallery Section -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img class="gallery-photo" src="images/photo1.jpeg" alt="Photo of Muonga Kafuti">
+                    <figcaption>Profile Photo</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-photo" src="images/photo2.jpeg" alt="Photo 2">
+                    <figcaption>Photo 2</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-photo" src="images/photo3.jpeg" alt="Photo 3">
+                    <figcaption>Photo 3</figcaption>
+                </figure>
+            </div>
+            <div id="galleryViewer" class="gallery-viewer" hidden>
+    <button type="button" id="closeGallery"
+            aria-label="Close enlarged photo">
+        Close
+    </button>
+
+    <img id="enlargedPhoto" src="" alt="">
+
+    <p id="enlargedCaption"></p>
+</div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+
+            <article>
+                <h3>Self Introduction Video</h3>
+                <video controls width="320">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <p><strong>Summary:</strong> My name is Muonga Kafuti. In this short video, I introduce myself, my programme of study, and the web skills I hope to learn during this course.</p>
+            </article>
+
+            <article>
+                <h3>Voice Recording</h3>
+                <audio controls>
+                    <source src="videos/audio.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><strong>Summary:</strong> A short voice recording sharing my experience and expectations for Web Technologies.</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+           <form id="contactForm" novalidate>
+    <p>
+        <strong>Browser demonstration only - no message is sent. </strong>
+    </p>
+    <label for="contactName">Your Name:</label>
+    <input
+        type="text"
+        id="contactName"
+        name="name
+        required
+    >
+
+    <label for="contactEmail">Your Email:</label>
+    <input
+        type="email"
+        id="contactEmail"
+        name="email"
+        required
+    >
+
+    <label for="contactMessage">Your Message:</label>
+    <textarea
+        id="contactMessage"
+        name="message"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit">Preview Message</button>
+
+    <p id="formFeedback" role="status" aria-live="polite"></p>
+
+    <div id="messagePreview" hidden>
+        <h3>Message Preview</h3>
+        <p><strong>Name:</strong> <span id="previewName"></span></p>
+        <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+        <p><strong>Message:</strong> <span id="previewMessage"></span></p>
+        <p>This message has been validated but not sent.</p>
+    </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muonga Kafuti - Web Technologies Assignment.</p>
+    </footer>
+
+</body>
+</html>
